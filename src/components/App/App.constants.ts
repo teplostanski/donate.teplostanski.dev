@@ -10,11 +10,6 @@ export const currencies = [
     network: 'TRC20',
   },
   {
-    name: 'BitcoinCash',
-    address: 'qp9npsq37p8v9qv4lx9dddpllyqfsyn92yn3s82fwq',
-    network: 'BCH',
-  },
-  {
     name: 'Dogecoin',
     address: 'DT18LEWuZGBoaAF1p4xsTmFo6xy4GetN5U',
     network: 'DOGE',
@@ -29,5 +24,10 @@ export const currencies = [
     address:
       '87EQZHdN95gCqVsjkM17fYPkjWszCB8q1ZxrrBPp5ZEZf8pN6Gc1ttGHKFqodQR58D2brjU1tB7AMHMy3PLEBRh8LbMF5hV',
     network: 'XMR',
+  },
+  {
+    name: 'Tron',
+    address: 'TNSZWVaBr7dSvsD57WiQ6VMhQZCt8ANvj8',
+    network: 'TRX',
   },
 ];

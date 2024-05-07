@@ -12,7 +12,7 @@ export default function App() {
     console.log(JSON.stringify(currencies[index], null, 2));
     setTimeout(() => {
       setCopiedIndex(null);
-    }, 3500);
+    }, 4000);
   };
 
   const formatAddress = (address: string) => {
@@ -25,7 +25,12 @@ export default function App() {
         {currencies.map((currency, index) => (
           <div key={index} className={styles.card}>
             {copiedIndex === index ? (
-              <div className={styles.message}><span  className={styles.messageThin}>Copied! Network:</span> <span  className={styles.messageBold}>{currency.network}</span></div>
+              <div className={styles.address}>
+                <div className={styles.message}>
+                  <span className={styles.messageThin}>Copied! Network:</span>
+                  <span className={styles.messageBold}>{currency.network}</span>
+                </div>
+              </div>
             ) : (
               <div className={styles.address}>
                 <span>
@@ -36,7 +41,10 @@ export default function App() {
                 </span>
               </div>
             )}
-            <CopyToClipboard text={currency.address} onCopy={() => handleCopy(index)}>
+            <CopyToClipboard
+              text={currency.address}
+              onCopy={() => handleCopy(index)}
+            >
               <button>
                 <GoCopy size={18} color="#3a3a3a" />
               </button>
@@ -44,7 +52,7 @@ export default function App() {
           </div>
         ))}
       </div>
-      
+
       <div className={styles.links}>
         <a className={styles.link} href="mailto:teplostanski@yandex.ru">
           teplostanski@yandex.ru

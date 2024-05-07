@@ -54,7 +54,8 @@
     display: flex;
     padding: 10px 18px;
     background: var(--white);
-    gap: 10px;
+    gap: 14px;
+    width: 374px;
     border-radius: 6px;
     justify-content: space-between;
     align-items: center;
@@ -81,6 +82,7 @@
     .card {
       display: flex;
       padding: 10px 12px;
+      width: 326px;
     }
     gap: 10px;
   }
@@ -97,8 +99,11 @@
     font-weight: 300;
     color: var(--dark-gray);
     text-decoration: none;
-    &:active {
-      font-size: 400px;
+    &:visited {
+      color: var(--purple);
+    }
+    &:active{
+      font-weight: 500;
     }
     &:hover {
       text-decoration: underline;
